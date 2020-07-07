@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html xmlns:th="http:///www.thymeleaf.org">
+<head>
+    <link rel="stylesheet"
+          href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css" />
+    <script src="https://kit.fontawesome.com/cfad4d1391.js" crossorigin="anonymous"></script>
+    <script>
+        function doReload() {
+
+            // reloadメソッドによりページをリロード
+            window.location.reload();
+        }
+
+        window.addEventListener('load', function () {
+
+            // ページ表示完了した5秒後にリロード
+            setTimeout(doReload, 500);
+        });
+    </script>
+    <link href='https://fonts.googleapis.com/css?family=Nunito:700'
+          rel='stylesheet' type='text/css' />
+
+    <style type="text/css">
+        table {
+            width: 1500px;
+        }
+
+
+        div.ta0 {
+            text-align: left;
+            align-items: center;
+            overflow-x: auto;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .logo {
+            font-family: 'Nunito', sans-serif;
+        }
+
+        ul {
+            width:400px;
+        }
+
+        ul li {
+            float:left;
+            width:200px;
+            margin-top: 5px;
+        }
+
+        .my-parts ul {
+            list-style: none;
+            margin: 0px;
+            padding: 0px;
+        }
+        .my-parts ul li a {
+            display: block;
+            text-decoration: none;
+            background: #fff;
+            color: #333;
+            text-align: left;
+            margin-top: 0px;
+        }
+
+    </style>
+
+
+    <meta charset="UTF-8" />
+    <title>HashiCorp Nomad Demo</title>
+</head>
+
+<body>
+
+<div class="ta0" style="margin:50px;">
+    <h2 class="logo">Animal List</h2>
+    <table class="pure-table pure-table-striped table logo">
+        <thead>
+        <tr>
+            <th>Animal</th>
+        </tr>
+        </thead>
+        <th:block th:each="animals : ${animals}">
+            <tr>
+                <td th:text="${animals.animal}" />
+            </tr>
+        </th:block>
+    </table>
+</div>
+</body>
+</html>

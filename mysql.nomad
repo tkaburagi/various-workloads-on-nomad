@@ -1,5 +1,5 @@
 job "r2-mysql-v5-7-28" {
-  datacenters = ["snapshots-r2"]
+  datacenters = ["dc1"]
 
   type = "service"
 
