@@ -4,5 +4,5 @@ spring:
   datasource:
     url: ${MYSQL_HOST}
     driver-class-name: com.mysql.jdbc.Driver
-    username: root
-    password: rooooot
+    username: ${MYSQL_USER}
+    password: ${MYSQL_PASS}

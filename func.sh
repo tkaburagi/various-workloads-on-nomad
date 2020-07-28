@@ -3,4 +3,6 @@
 
 animal=$(echo $(cat local/payload.txt) | tr '[:lower:]' '[:upper:]')
 
-mysql -u root -prooooot -D handson -e "insert into animals values (\""${animal}"\")"
+sleep 10
+
+mysql -h 192.168.100.101 -u root -prooooot -D handson -e "insert into animals values (\""${animal}"\")"
