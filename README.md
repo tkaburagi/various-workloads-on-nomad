@@ -20,6 +20,7 @@
        * `mysql -h ${MYSQL_HOST} -u root -prooooot -D handson -e "drop table if exists animals"`
        * `mysql -h ${MYSQL_HOST} -u root -prooooot -D handson -e "create table animals (animal varchar(100));"`
 * `nomad job run ui-java.hcl`
+   * Open the browser. `http://127.0.0.1:8080/`
 * `./insert-dog.sh`
 * `nomad job run parameterized-toupper.hcl`
 * `echo "cat" | nomad job dispatch r2-parameterized-toUpper -`
