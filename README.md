@@ -3,6 +3,7 @@
 
 ## Set-up
 
+* mkdir mysql-dump
 * Create a S3 Bucket
 * Replace `s3://mysql-dump-tkaburagi/` to your bucket name in the `dump-mysql.sh` and `init.sh`.
 * Run Nomad on localhost
