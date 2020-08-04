@@ -4,7 +4,7 @@
 ## Set-up
 
 * Create a S3 Bucket
-* Replace `s3://mysql-dump-tkaburagi/` to your bucket name.
+* Replace `s3://mysql-dump-tkaburagi/` to your bucket name in the `dump-mysql.sh` and `init.sh`.
 * Run Nomad on localhost
 * Replace `172.20.10.4(for Docker MySQL IP)` to your network in all files.
 * `watch -d -t -n 1 'echo Inside MySQL && mysql -h 172.20.10.4 -u root -D handson -e "select * from animals"'`
