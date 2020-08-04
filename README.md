@@ -15,8 +15,9 @@
 
 ## Demo
 * `nomad job run mysql.hcl`
-    * `mysql -h ${MYSQL_HOST} -u root -prooooot -D handson -e "drop table if exists animals"`
-    * `mysql -h ${MYSQL_HOST} -u root -prooooot -D handson -e "create table animals (animal varchar(100));"`
+    * when the first time,
+       * `mysql -h ${MYSQL_HOST} -u root -prooooot -D handson -e "drop table if exists animals"`
+       * `mysql -h ${MYSQL_HOST} -u root -prooooot -D handson -e "create table animals (animal varchar(100));"`
 * `nomad job run ui-java.hcl`
 * `./insert-dog.sh`
 * `nomad job run parameterized-toupper.hcl`
